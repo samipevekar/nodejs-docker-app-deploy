@@ -1,0 +1,9 @@
+services:
+  sami:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sami:latest
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
