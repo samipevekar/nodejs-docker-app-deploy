@@ -21,5 +21,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/ubuntu/nodejs-docker-app-deploy
-            git pull
+            git pull origin master
             docker compose up -d --build
